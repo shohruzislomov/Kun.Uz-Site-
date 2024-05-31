@@ -1,0 +1,28 @@
+### Registration
+POST localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "name": "jam",
+  "surname": "erkinov",
+  "email": "j22@gmail.com",
+  "password": "4444",
+  "phone": "+998975491402"
+}
+
+### jamaeu22@gmail.com eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcxNjAwMDIsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzE3MjQ2NDAyLCJpc3MiOiJLdW5VelRlc3QifQ.58St-9Ek0kxfxOxFWUqcxi8IHnoDFe81DWsIFKzC4wfWwL_I2lRXETMcRWDrr1nputAR4w_Tm0ok0bRheWKkJQ
+
+### Verification
+GET localhost:8080/auth/verification/1
+
+### Login
+POST localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "jamaeu22@gmail.com",
+  "password": "4444"
+}
+
+### Resend
+GET localhost:8080/auth/registration/resend/j22@gmail.com
