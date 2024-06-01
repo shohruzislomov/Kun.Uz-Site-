@@ -41,8 +41,8 @@ public class ProfileService {
         return toDTO(entity);
     }
 
-    public void update(JwtDTO dto, ProfileCreateDTO profile) {
-        ProfileEntity exists = getId(dto.getId());
+    public void update(Integer id, ProfileCreateDTO profile) {
+        ProfileEntity exists = getId(id);
         exists.setName(profile.getName());
         exists.setSurname(profile.getSurname());
         exists.setEmail(profile.getEmail());

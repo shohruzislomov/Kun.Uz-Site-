@@ -30,19 +30,21 @@ public class ProfileController {
         return ResponseEntity.ok().body(response);
     }
 
-    @PutMapping("/update")
-    public ResponseEntity<Boolean> update(@Valid @RequestBody ProfileCreateDTO profileCreateDTO,
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Boolean> update(@PathVariable("id") Integer id,
+                                          @Valid @RequestBody ProfileCreateDTO profileCreateDTO,
                                           @RequestHeader("Authorization") String token) {
         JwtDTO dto = SecurityUtil.getJwtDTO(token, ProfileRole.ROLE_ADMIN);
-        profileService.update(dto, profileCreateDTO);
+        profileService.update(id, profileCreateDTO);
         return ResponseEntity.ok().body(true);
     }
 
-    @PutMapping("/updateUser")
-    public ResponseEntity<Boolean> updateUser(@Valid @RequestBody ProfileUpdateDTO profileUpdateDTO,
+    @PutMapping("/updateUser/{userId}")
+    public ResponseEntity<Boolean> updateUser(@PathVariable("id") Integer id,
+                                              @Valid @RequestBody ProfileUpdateDTO profileUpdateDTO,
                                               @RequestHeader("Authorization") String token) {
         JwtDTO dto = SecurityUtil.getJwtDTO(token);
-        profileService.updateUser(dto.getId(), profileUpdateDTO);
+        profileService.updateUser(id, profileUpdateDTO);
         return ResponseEntity.ok().body(true);
     }
 
@@ -55,10 +57,11 @@ public class ProfileController {
         return ResponseEntity.ok().body(list);
     }
 
-    @DeleteMapping("/delete")
-    public ResponseEntity<Boolean> delete(@RequestHeader("Authorization") String token) {
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Boolean> delete(@PathVariable("id") Integer id,
+                                          @RequestHeader("Authorization") String token) {
         JwtDTO dto = SecurityUtil.getJwtDTO(token, ProfileRole.ROLE_ADMIN);
-        profileService.delete(dto.getId());
+        profileService.delete(id);
         return ResponseEntity.ok().body(true);
     }
 
