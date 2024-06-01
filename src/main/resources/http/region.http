@@ -1,0 +1,17 @@
+### Create Region
+POST localhost:8080/region/create
+Content-Type: application/json
+
+{
+  "orderNumber": 3,
+  "nameUz": "Region 2 uz",
+  "nameEn": "Region 2 en",
+  "nameRu": "Region 2 ru"
+}
+
+### Get ALl
+GET localhost:8080/region/all
+
+### Get All by Language
+GET localhost:8080/region/lang
+Accept-Language: UZ

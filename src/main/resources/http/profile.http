@@ -1,0 +1,14 @@
+### Create Profile eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+POST localhost:8080/profile/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+
+{
+  "name": "Toshmat",
+  "surname": "Toshmatov",
+  "email": "Toshmat@gmail.com",
+  "phone": "9949392992",
+  "password": "3333",
+  "role": "ROLE_PUBLISH",
+  "status": "ACTIVE"
+}
