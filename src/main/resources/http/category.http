@@ -1,0 +1,33 @@
+### Create   eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+POST localhost:8080/category/create
+Content-Type: application/json
+Category: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+
+{
+  "orderNumber": "3",
+  "nameUz": "name uz3",
+  "nameRu": "name ru3",
+  "nameEn": "name en3"
+}
+
+### Update
+PUT localhost:8080/category/update/1
+Content-Type: application/json
+Category: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+
+{
+  "orderNumber": "4",
+  "nameUz": "name uz4",
+  "nameRu": "name ru4",
+  "nameEn": "name en4"
+}
+
+### Delete
+DELETE localhost:8080/category/delete/1
+Category: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+
+
+### GetAll
+GET localhost:8080/category/getAll
+Category: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+Accept-Language: UZ
