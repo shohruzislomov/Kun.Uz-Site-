@@ -5,21 +5,21 @@ Content-Type: application/json
 {
   "name": "shakh",
   "surname": "islamov",
-  "email": "shakh21@gmail.com",
+  "email": "shohruxjan8892@gmail.com",
   "password": "4444",
   "phone": "+998975492400"
 }
 
 
 ### Verification
-GET localhost:8080/auth/verification/1
+GET localhost:8080/auth/verification/5
 
-### Login eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjM3NjgsImlkIjoxLCJyb2xlIjoiUk9MRV9VU0VSIiwiZXhwIjoxNzE3MzEwMTY4LCJpc3MiOiJLdW5VelRlc3QifQ.7hpZkox04i9kyn8iRpAesR066rg62YAwaWllEkF5E-MaRYYyXbcs5QLVXS8QlA1QUioinatrIxkv6yg5X2xvlg
+### Login
 POST localhost:8080/auth/login
 Content-Type: application/json
 
 {
-  "email": "shakh21@gmail.com",
+  "email": "shohruxjan8892@gmail.com",
   "password": "4444"
 }
 

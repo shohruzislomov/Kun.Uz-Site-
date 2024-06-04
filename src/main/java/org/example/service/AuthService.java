@@ -12,13 +12,12 @@ import org.example.util.JWTUtil;
 import org.example.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
 public class AuthService {
+
     @Autowired
     private ProfileRepository profileRepository;
     @Autowired
@@ -46,6 +45,7 @@ public class AuthService {
         sendRegistrationEmail(profileEntity.getId(), dto.getEmail());
         return "To complete your registration please verify your email.";
     }
+
     public ProfileDTO login(LoginDTO dto) {
         Optional<ProfileEntity> optional = profileRepository.findByEmailAndVisibleTrue(dto.getEmail());
         if (optional.isEmpty()) {
@@ -55,7 +55,7 @@ public class AuthService {
         if (!profileEntity.getPassword().equals(MD5Util.getMD5(dto.getPassword()))) {
             throw new AppBadException(" Wrong password ! ");
         }
-        if (profileEntity.getStatus() != ProfileStatus.ACTIVE ){
+        if (profileEntity.getStatus() != ProfileStatus.ACTIVE) {
             throw new AppBadException(" You are not active ! ");
         }
         ProfileDTO profileDTO = new ProfileDTO();

@@ -7,6 +7,7 @@ import org.example.enums.ProfileRole;
 @Setter
 public class JwtDTO {
     private Integer id;
+    private String username;
     private ProfileRole role;
 
     public JwtDTO(Integer id, ProfileRole role) {

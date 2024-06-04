@@ -51,12 +51,12 @@ public class CategoryController {
         List<CategoryDTO> response = categoryService.getAll();
         return ResponseEntity.ok().body(response);
     }
-    @GetMapping("/getAll")
+
+    @GetMapping("/getAllByLang")
     public ResponseEntity<List<CategoryDTO>> getAllByLang(@RequestHeader(value = "Accept-Language", defaultValue = "UZ") LanguageEnum lang,
-                                                    @RequestHeader("Category") String token) {
+                                                          @RequestHeader("Category") String token) {
         SecurityUtil.getJwtDTO(token, ProfileRole.ROLE_ADMIN);
         List<CategoryDTO> response = categoryService.getAllByLang(lang);
         return ResponseEntity.ok().body(response);
     }
-
 }

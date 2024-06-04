@@ -1,14 +1,14 @@
-### Create Profile eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
-POST localhost:8080/profile/create
+### Create Profile
+POST localhost:8080/profile/admin/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTcyMjQ2OTksImlkIjoxLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzMxMTA5OSwiaXNzIjoiS3VuVXpUZXN0In0.Ywouwrrogcv4R5RITG6NejEqLdUg89-FESXsdgx-IkuTykvldUWOoQ0tvpvYaCn8fuLoLZw1dvAS0r6NqAgWmg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTc0NDAyNTAsImlkIjo1LCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxNzUyNjY1MCwiaXNzIjoiS3VuVXpUZXN0In0.G2dDHl8x5ExfgCaJ49_fDVmS7XR7M-dJkh0u9fDG39Sh4HXdV10rA0wQdICz63Lr3Sw8k5Qm4vZlac0dMemf8A
 
 {
-  "name": "Toshmat",
-  "surname": "Toshmatov",
-  "email": "Toshmat@gmail.com",
+  "name": "Tosh",
+  "surname": "Tv",
+  "email": "dfdf@gmail.com",
   "phone": "9949392992",
-  "password": "3333",
-  "role": "ROLE_PUBLISH",
+  "password": "4444",
+  "role": "ROLE_USER",
   "status": "ACTIVE"
 }
